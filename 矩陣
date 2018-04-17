@@ -1,0 +1,37 @@
+#include <iostream> 
+#include <iomanip> 
+
+using namespace std; 
+
+int main(int argc, char *argv[]) 
+{ int l, m, n; 
+int A[3][3] = { {1,3,-4}, {1, 1,-2}, {-1,-2,5} }, 
+B[3][3] = { {8,3, 0}, {3,10, 2}, { 0, 2,6} }, 
+C[3][3]; 
+
+for (l=0; l<3; l++) 
+for (n=0; n<3; n++) 
+C[l][n] = 0; 
+
+for (l=0; l<3; l++) 
+for (n=0; n<3; n++) 
+for (m=0; m<3; m++) 
+C[l][n] += A[l][m] * B[m][n]; 
+
+for (l=0; l<3; l++) 
+{ cout << "|"; 
+for (m=0; m<3; m++) 
+cout << setw(3) << A[l][m]; 
+cout << (l==1 ? " | * |" : " | |"); 
+for (n=0; n<3; n++) 
+cout << setw(3) << B[l][n]; 
+cout << (l==1 ? " | = |" : " | |"); 
+for (n=0; n<3; n++) 
+cout << setw(4) << C[l][n]; 
+cout << " |\n"; 
+} 
+
+system("pause"); 
+
+return 0; 
+} 
