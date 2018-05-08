@@ -1,0 +1,326 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << "Hello, world!" << endl;
+    return 0;
+}
+=========================================================
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    }
+}
+==========================================================
+#include <stdio.h>
+ 
+int main()
+{
+    /* 我的第一个 C 程序 */
+    printf("Hello, World! \n");
+ 
+    return 0;
+}
+===========================================================================================================
+#include <iostream>
+using namespace std;
+ 
+// main() 是程序开始执行的地方
+ 
+int main()
+{
+   cout << "Hello World"; // 输出 Hello World
+   return 0;
+}
+==============================================================
+public class HelloWorld {
+    /* 第一个Java程序
+     * 它将打印字符串 Hello World
+     */
+    public static void main(String []args) {
+        System.out.println("Hello World"); // 打印 Hello World
+    }
+}
+================================================================
+printf
+(
+"Hello, World! \n"
+)
+;
+=====================================================================================================================
+#include <iostream>
+using namespace std;
+ 
+int main ()
+{
+ 
+   for( ; ; )
+   {
+      printf("This loop will run forever.\n");
+   }
+ 
+   return 0;
+}
+=====================================================================
+public class Test {
+   public static void main(String args[]) {
+      int x = 10;
+      while( x < 20 ) {
+         System.out.print("value of x : " + x );
+         x++;
+         System.out.print("\n");
+      }
+   }
+}
+========================================================================
+#include <stdio.h>
+ 
+int main ()
+{
+   for( ; ; )
+   {
+      printf("该循环会永远执行下去！\n");
+   }
+   return 0;
+}
+=============================================================================================================================
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+   int a = 21;
+   int b = 10;
+   int c;
+ 
+   c = a + b;
+   cout << "Line 1 - c 的值是 " << c << endl ;
+   c = a - b;
+   cout << "Line 2 - c 的值是 " << c << endl ;
+   c = a * b;
+   cout << "Line 3 - c 的值是 " << c << endl ;
+   c = a / b;
+   cout << "Line 4 - c 的值是 " << c << endl ;
+   c = a % b;
+   cout << "Line 5 - c 的值是 " << c << endl ;
+ 
+   int d = 10;   //  测试自增、自减
+   c = d++;
+   cout << "Line 6 - c 的值是 " << c << endl ;
+ 
+   d = 10;    // 重新赋值
+   c = d--;
+   cout << "Line 7 - c 的值是 " << c << endl ;
+   return 0;
+}
+==================================================
+public class Test {
+ 
+  public static void main(String[] args) {
+     int a = 10;
+     int b = 20;
+     int c = 25;
+     int d = 25;
+     System.out.println("a + b = " + (a + b) );
+     System.out.println("a - b = " + (a - b) );
+     System.out.println("a * b = " + (a * b) );
+     System.out.println("b / a = " + (b / a) );
+     System.out.println("b % a = " + (b % a) );
+     System.out.println("c % a = " + (c % a) );
+     System.out.println("a++   = " +  (a++) );
+     System.out.println("a--   = " +  (a--) );
+     // 查看  d++ 与 ++d 的不同
+     System.out.println("d++   = " +  (d++) );
+     System.out.println("++d   = " +  (++d) );
+  }
+}
+=====================================================
+#include <stdio.h>
+ 
+int main()
+{
+   int a = 21;
+   int b = 10;
+   int c ;
+ 
+   c = a + b;
+   printf("Line 1 - c 的值是 %d\n", c );
+   c = a - b;
+   printf("Line 2 - c 的值是 %d\n", c );
+   c = a * b;
+   printf("Line 3 - c 的值是 %d\n", c );
+   c = a / b;
+   printf("Line 4 - c 的值是 %d\n", c );
+   c = a % b;
+   printf("Line 5 - c 的值是 %d\n", c );
+   c = a++;  // 赋值后再加 1 ，c 为 21，a 为 22
+   printf("Line 6 - c 的值是 %d\n", c );
+   c = a--;  // 赋值后再减 1 ，c 为 22 ，a 为 21
+   printf("Line 7 - c 的值是 %d\n", c );
+ 
+}
+============================================================================================================================
+#include <iostream>
+using namespace std;
+ 
+#include <iomanip>
+using std::setw;
+ 
+int main ()
+{
+   int n[ 10 ]; // n 是一个包含 10 个整数的数组
+ 
+   // 初始化数组元素          
+   for ( int i = 0; i < 10; i++ )
+   {
+      n[ i ] = i + 100; // 设置元素 i 为 i + 100
+   }
+   cout << "Element" << setw( 13 ) << "Value" << endl;
+ 
+   // 输出数组中每个元素的值                     
+   for ( int j = 0; j < 10; j++ )
+   {
+      cout << setw( 7 )<< j << setw( 13 ) << n[ j ] << endl;
+   }
+ 
+   return 0;
+}
+=======================================
+public class TestArray {
+   public static void main(String[] args) {
+      // 数组大小
+      int size = 10;
+      // 定义数组
+      double[] myList = new double[size];
+      myList[0] = 5.6;
+      myList[1] = 4.5;
+      myList[2] = 3.3;
+      myList[3] = 13.2;
+      myList[4] = 4.0;
+      myList[5] = 34.33;
+      myList[6] = 34.0;
+      myList[7] = 45.45;
+      myList[8] = 99.993;
+      myList[9] = 11123;
+      // 计算所有元素的总和
+      double total = 0;
+      for (int i = 0; i < size; i++) {
+         total += myList[i];
+      }
+      System.out.println("总和为： " + total);
+   }
+}
+=================================================
+#include <stdio.h>
+ 
+int main ()
+{
+   int n[ 10 ]; /* n 是一个包含 10 个整数的数组 */
+   int i,j;
+ 
+   /* 初始化数组元素 */         
+   for ( i = 0; i < 10; i++ )
+   {
+      n[ i ] = i + 100; /* 设置元素 i 为 i + 100 */
+   }
+   
+   /* 输出数组中每个元素的值 */
+   for (j = 0; j < 10; j++ )
+   {
+      printf("Element[%d] = %d\n", j, n[j] );
+   }
+ 
+   return 0;
+}
+==================================================================================================================================
+#include <iostream>
+ 
+using namespace std;
+ 
+// 基类
+class Shape 
+{
+public:
+   // 提供接口框架的纯虚函数
+   virtual int getArea() = 0;
+   void setWidth(int w)
+   {
+      width = w;
+   }
+   void setHeight(int h)
+   {
+      height = h;
+   }
+protected:
+   int width;
+   int height;
+};
+ 
+// 派生类
+class Rectangle: public Shape
+{
+public:
+   int getArea()
+   { 
+      return (width * height); 
+   }
+};
+class Triangle: public Shape
+{
+public:
+   int getArea()
+   { 
+      return (width * height)/2; 
+   }
+};
+ 
+int main(void)
+{
+   Rectangle Rect;
+   Triangle  Tri;
+ 
+   Rect.setWidth(5);
+   Rect.setHeight(7);
+   // 输出对象的面积
+   cout << "Total Rectangle area: " << Rect.getArea() << endl;
+ 
+   Tri.setWidth(5);
+   Tri.setHeight(7);
+   // 输出对象的面积
+   cout << "Total Triangle area: " << Tri.getArea() << endl; 
+ 
+   return 0;
+}
+===============================================================
+[可见度] interface 接口名称 [extends 其他的类名] {
+        // 声明变量
+        // 抽象方法
+}
+/* 文件名 : NameOfInterface.java */
+import java.lang.*;
+//引入包
+ 
+public interface NameOfInterface
+{
+   //任何类型 final, static 字段
+   //抽象方法
+}
+/* 文件名 : Animal.java */
+interface Animal {
+   public void eat();
+   public void travel();
+}
+=================================================================
+void recursion()
+{
+   statements;
+   ... ... ...
+   recursion(); /* 函数调用自身 */
+   ... ... ...
+}
+ 
+int main()
+{
+   recursion();
+}
+==========================================================================================================================
